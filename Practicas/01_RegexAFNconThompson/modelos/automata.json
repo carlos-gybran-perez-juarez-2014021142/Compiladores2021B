@@ -1,0 +1,53 @@
+{
+    "alfabeto":"abc",
+    "estados":[
+        {
+            "id": 0,
+            "esInicial": "True"
+        },
+        {"id": 1},
+        {"id": 2},
+        {"id": 3},
+        {"id": 4},
+        {"id": 5},
+        {
+            "id": 6,
+            "esFinal": "True"
+        }
+    ],
+    "estadoInicial":0,
+    "estadoFinal":[{"id": 6}],
+    "tablaDeTransiciones":[
+        {
+            "estadoActual":0,
+            "estadoDeTransicion":1,
+            "simbolo":"E"
+        },
+        {
+            "estadoActual":0,
+            "estadoDeTransicion":3,
+            "simbolo":"E"
+        },{
+            "estadoActual":1,
+            "estadoDeTransicion":2,
+            "simbolo":"a"
+        },{
+            "estadoActual":2,
+            "estadoDeTransicion":5,
+            "simbolo":"E"
+        },{
+            "estadoActual":3,
+            "estadoDeTransicion":4,
+            "simbolo":"b"
+        },{
+            "estadoActual":4,
+            "estadoDeTransicion":5,
+            "simbolo":"E"
+        },{
+            "estadoActual":5,
+            "estadoDeTransicion":6,
+            "simbolo":"c"
+        }
+    ]
+
+}

@@ -1,0 +1,70 @@
+https://github.com/JoelRomero97/Teoria-de-Comunicaciones-y-Senales/blob/master/Pr%C3%A1cticas/4%20-%20TDF/TDF.c
+
+Una gramática es un conjunto de reglas cuya aplicación recursiva
+siempre permitirá derivar una cadena del lenguaje para el cual se construyó la gramática. 
+
+una gramática libre de contexto (o simplemente gramática) 
+consiste en terminales, no terminales, un símbolo inicial y producciones.
+
+Los  terminales son los símbolos básicos a partir de los cuales se forman 
+las cadenas.
+
+Los  no terminales son variables sintácticas que denotan conjuntos de cadenas. 
+Los conjuntos de cadenas denotados por los no terminales 
+ayudan a definir el lenguaje generado por la gramática.
+
+En una gramática, un no terminal se distingue como el símbolo inicial, 
+y el conjunto de cadenas que denota es el lenguaje generado por la gramática. 
+Por convención, las producciones para el símbolo inicial se listan primero.
+
+Las producciones de una gramática especifican 
+la forma en que pueden combinarse los terminales y los no terminales 
+para formar cadenas
+
+
+SiS∗⇒α, en donde S es el símbolo inicial de una gramática G, 
+decimos que αes una formade frase de G
+Un enunciado de G es una forma de frase sin símbolos no terminales
+
+-----------------------------------------
+Árboles de análisis sintáctico y derivaciones
+
+Un  árbol  de  análisis  sintáctico  es  una  representación  gráfica  
+de  una  derivación  que  filtra  el  orden en el que se aplican las 
+producciones para sustituir los no terminales. 
+
+Cada nodo interior de un árbol de análisis sintáctico representa 
+la aplicación de una producción. 
+
+El nodo interior se etiqueta con el no terminal A en el encabezado 
+de la producción; los hijos del nodo se etiquetan, de izquierda a derecha, 
+mediante los símbolos en el cuerpo de la producción por la que se 
+sustituyó esta A durante la derivación.
+
+
+--------------------------------------------
+
+ una gramática ambigua es aquella que produce más de una 
+ derivación por la izquierda, o más de una derivación por la 
+ derecha para el mismo enunciado
+
+ --------------------------------------------
+
+LENGUAJE perteneciente a GRAMÁTICA
+
+Un lenguaje es un conjunto finito o infinito de cadenas.
+
+Una prueba de que una gramática G genera un lenguaje L consta 
+de dos partes: 
+
+    mostrar que todas las cadenas generadas por G están en L y, 
+    de manera inversa, 
+    que todas las cadenas enL pueden generarse sin duda mediante G
+
+cada lenguaje regular es un lenguaje libre de contexto
+
+------------------------------------------------
+
+
+
+
