@@ -2,4 +2,4 @@
 Carlos Gybrán Pérez Juárez
 La calculadora puede hacer el siguiente tipo de operaciones:
 
-![Prueba de funcionamiento](https://github.com/carlos-gybran-perez-juarez-2014021142/Compiladores2021B/tree/main/Practicas/00_Calculadora/prueba.png)
+![Prueba de funcionamiento](https://github.com/carlos-gybran-perez-juarez-2014021142/Compiladores2021B/Practicas/00_Calculadora/prueba.png)
