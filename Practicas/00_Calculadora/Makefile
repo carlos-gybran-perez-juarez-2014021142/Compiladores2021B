@@ -1,23 +1,17 @@
-CC = gcc # Flag for implicit rules
-CFLAGS = -lfl
+CC = gcc
+CFLAGS = -lm
 .DEFAULT_GOAL := run
-NOMBRE = proyecto
+NOMBRE = calc
 
 bison: $(NOMBRE).y
-	bison --defines=y.tab.h $(NOMBRE).y
+	bison -d $(NOMBRE).y
 flexeo: $(NOMBRE).l
-	flex -o lex.yy.c $(NOMBRE).l
+	flex $(NOMBRE).l
 compilex: bison flexeo
-	$(CC) $(CFLAGS) -c lex.yy.c
-compison: compilex
-	$(CC) $(CFLAGS) -c $(NOMBRE).tab.c
-construccion: compison
-	$(CC) $(CFLAGS) -o ejecutable lex.yy.o $(NOMBRE).tab.o
-
-.INTERMEDIATE: $(NOMBRE).tab.o lex.yy.o lex.yy.c $(NOMBRE).tab.c *.tab.h
-
-run: construccion
-	./ejecutable
-
+	$(CC) -o calc lex.yy.c $(NOMBRE).tab.c $(CFLAGS) 
+run: compilex
+	./calc
 clean:
 	rm *.o *.yy.c *.tab.? ejecutable
+#Guia para entender cada parte de la calculadora
+#https://programmersought.com/article/84234429961/
