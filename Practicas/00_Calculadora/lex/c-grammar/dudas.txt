@@ -1,0 +1,9 @@
+en el archivo .l puse en las lineas que tenia dudas "Preguntar"
+ya que no sé si realmente lo necesitamos e el mínimo, 
+pero me pareció importante marcarlos de alguna forma
+
+Estuve construyendo un makefile para automatizar la 
+construcción y el despliegue de los archivos en el archivo .y
+me hizo falta eliminar algunas cosas porque no había ejecutado el
+ansi c general, pero ya lo hice.
+La version terminada se la enviaré después por correo 

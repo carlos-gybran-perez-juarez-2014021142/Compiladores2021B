@@ -1,0 +1,27 @@
+program ::= LET [ declarations ] IN commandsequence END
+
+declarations ::= INTEGER [ idseq ] IDENTIFIER .
+
+idseq ::= idseq...  IDENTIFIER ,
+
+commandsequence ::= command...  command
+
+command ::= SKIP ;
+    |IDENTIFIER := expression ;
+    |IF exp THEN commandsequence ELSE commandsequence FI ;
+    |WHILE exp DO commandsequence END ;
+    |READ IDENTIFIER ;
+    |WRITE expression ;
+
+expression ::= NUMBER|IDENTIFIER|'(' expression ')'
+    |expression + expression | expression − expression
+    |expression ∗ expression | expression / expression
+    |expression ˆ expression
+    |expression = expression
+    |expression < expression
+    |expression > expression
+
+Libro:
+https://dlsiisv.fi.upm.es/traductores/Software/Flex-Bison.pdf
+
+https://www.oreilly.com/library/view/flex-bison/9780596805418/ch01.html
